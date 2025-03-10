@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"fileVersion": 1,
+	"version": "0.1.0",
+	"friendlyName": "Python Sample Plugin",
+	"description": "An example of a Python plugin. This can be used as a starting point when creating your own plugin.",
+	"createdBy": "untrustedmodders",
+	"createdByURL": "https://github.com/untrustedmodders/",
+	"docsURL": "https://github.com/untrustedmodders/plugify-plugin-python-template",
+	"downloadURL": "",
+	"updateURL": "",
+	"entryPoint": "sample_plugin.ExamplePlugin",
+	"supportedPlatforms": [],
+	"languageModule": {
+		"name": "python3"
+	},
+	"dependencies": [],
+	"exportedMethods": [
+		{
+			"name": "MakePrint",
+			"funcName": "make_print",
+			"paramTypes": [
+				{
+					"type": "int32",
+					"name": "count"
+				},
+				{
+					"type": "string",
+					"name": "message"
+				}
+			],
+			"retType": {
+				"type": "void"
+			}
+		}
+	]
+}
